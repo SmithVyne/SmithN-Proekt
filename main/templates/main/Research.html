@@ -1,0 +1,27 @@
+{% extends 'main\Base.html' %}
+{% load static %}
+
+{% block title %} Research {% endblock %}
+
+{% block content %} 
+<div class="content research">
+    <h1>Research</h1>
+
+    <div class="image">
+        <img src="{% static 'main\img\Heatmap.jpg' %}" alt="Heatmap">
+    </div>
+
+    <p>After collecting the dataset and analyzing it, we found certain relationships between the number of subscribers and the subject of posts, on the basis of which we can recommend several solutions to increase activity in the group:</p>
+    <ul>
+        <li>Increase the number of posts on the topic "Competition" - there is usually more activity on such posts than under others.</li>
+        <li>Increase the number of posts on the topic "Camp" - higher activity was also noticed on these posts.</li>
+        <li>Invite more guests - Posting about new guests in itself will attract activity, but in addition to this, you will attract an audience that follows the guest.</li>
+        <li>Among other things, you can increase the number of posts about Irina Viktorovna in this way</li>
+    </ul>
+
+    <div class="image">
+        <img src="{% static 'main\img\1.jpg' %}" alt="-">
+    </div>
+
+</div>
+{% endblock %}
